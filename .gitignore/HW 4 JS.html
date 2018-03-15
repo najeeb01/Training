@@ -1,0 +1,40 @@
+<!-- 1. Click on a button and show your name
+2. Swap two Numbers in JavaScript at the time of loading the page
+3. Declare two variables and add these numbers and show the result 
+    to an alert without using onload function --> 
+<html>
+    <head>
+        <title>Najeebs JS HW</title>
+        <input type="submit" value="click" onclick="callfunction()">
+        <br><br>
+        <script>
+            //Question #1
+            function callfunction()
+            {
+                alert("Hello! My name is Najeeb");
+            }
+
+            //Question #2
+            var a = 1, b = 2; 
+            document.write('Original Num = '+a+', '+b+' <br>');
+
+            function swap()
+            {           
+            b = [a, a = b][0];
+            document.write('Swapped Num = '+a+', '+b+ '<br>','<br>');
+            }
+            
+            /*//Question #3
+            var a = 2;
+            var b = 3;
+            var add = a + b;
+            
+            alert('This is the sum of a and b ' + add);*/
+
+        </script>
+    </head>
+    <body onload="swap()">
+        
+    </body>
+</html>
+   
